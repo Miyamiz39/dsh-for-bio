@@ -1,0 +1,4 @@
+# The published package needs only what package.json `files` lists;
+# this keeps local scaffolding out of the tarball.
+.DS_Store
+*.log

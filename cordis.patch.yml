@@ -1,0 +1,13 @@
+# dsh-for-bio bundle: one Host plugin that registers the six analysis skills
+# and the anonymously reachable MCP data sources.
+#
+# The MCP servers are registered through ctx.mcpManager from index.js rather
+# than inserted as dsh-mcp-client rows: the Web and Desktop profiles own one
+# shared MCP fleet, and the manager is the surface that mounts, observes, and
+# withdraws those instances. Servers that need a credential are not registered
+# at all; see index.js MCP_SERVERS_REQUIRING_AUTH.
+
+- insert:
+    - id: dsh-for-bio
+      name: 'dsh-for-bio'
+      config: {}
