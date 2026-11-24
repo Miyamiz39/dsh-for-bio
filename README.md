@@ -140,12 +140,15 @@ Two cautions, both inherited from the upstream skills rather than added here:
 
 ## Install
 
-```bash
-# via the agent
-plugin_manager { action: install_bundle, target: "<this directory>" }
+In DSH, open **Plugins → Add plugin** and enter:
+
+```
+dsh-for-bio
 ```
 
-Or **Plugins → Add plugin** and pick this directory.
+Or paste this repository's URL: <https://github.com/Miyamiz39/dsh-for-bio>
+
+Then open the bundle's page to sign in to the data sources that need an account.
 
 ## Layout
 
