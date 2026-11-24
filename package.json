@@ -1,6 +1,6 @@
 {
   "name": "dsh-for-bio",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "private": false,
   "description": "Connect to preclinical research tools and databases (literature search, genomics analysis, target prioritization) to accelerate early-stage life sciences R&D",
   "type": "module",
@@ -16,7 +16,6 @@
     "lib",
     "cordis.patch.yml",
     "locale/*.json",
-    "docs",
     "icon.svg",
     "skills",
     "README.md",

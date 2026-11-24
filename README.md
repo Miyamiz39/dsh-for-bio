@@ -162,5 +162,4 @@ Or **Plugins → Add plugin** and pick this directory.
 | `cordis.patch.yml` | Bundle patch inserting the `dsh-for-bio` row |
 | `skills/` | The six skill bundles |
 | `locale/*.json` | English and Chinese display metadata |
-| `docs/` | Detail-page image and documents |
 | `icon.svg` | Plugin icon |
