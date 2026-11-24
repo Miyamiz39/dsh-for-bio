@@ -74,6 +74,11 @@ window.__ModuleLoader__.load({
           h('p', { className: 'bio-desc' }, server.description),
           server.error !== undefined && h('p', { className: 'bio-note error', role: 'alert' }, server.error),
           running && server.notice !== undefined && h('p', { className: 'bio-note busy', role: 'status' }, server.notice),
+          // Fallback for a system opener that failed or mangled the URL: the same
+          // authorization link, openable by hand.
+          running && typeof server.url === 'string' &&
+            h('p', { className: 'bio-note' },
+              h('a', { href: server.url, target: '_blank', rel: 'noreferrer noopener' }, 'Open the sign-in page manually')),
           !running && server.configured && server.obtainedAt !== undefined
             ? h('p', { className: 'bio-note' }, `Authorized ${new Date(server.obtainedAt).toLocaleString()}`)
             : null,
